@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/accountNumTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:background="#FFFFFF"
+            android:text="Account Number"
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/accountNumEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/accountNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:text="Full Account Name"
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/accountNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/bankNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:text="Select Bank Name"
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                android:id="@+id/bankGroup" >
+
+
+                <RadioButton
+                    android:id="@+id/accessBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Access Bank"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:checked="true"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/UBA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UBA"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:checked="false"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/firstBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Bank"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:checked="false"
+                    android:textSize="12sp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/currencyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/currencylist"
+                android:layout_marginLeft="10dp"
+                android:background="#FFFFFF"
+                android:text="Currency"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/currencylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/currencyTv"
+                android:background="#969696"
+                android:backgroundTint="#969696" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/amountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/amountEt"
+                android:layout_marginLeft="10dp"
+                android:text="Amount"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/amountEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/amountTv"
+                android:backgroundTint="#000000"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/transferBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:background="#FFFFFF"
+            android:text="Transfer"
+            android:textColor="#FFEB3B"
+            android:textColorHint="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

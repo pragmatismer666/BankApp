@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">bank</string>
+    <string name="useremail">UserEmail</string>
+    <string name="signup_title">Welcome - SignUp</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="signup">SignUp</string>
+    <string name="balanceUrl">https://api.flutterwave.com/v3/balances</string>
+    <string name="transferUrl">https://api.flutterwave.com/v3/transfers</string>
+    <string name="twilio_msgUrl">https://api.twilio.com/2010-04-01/Accounts/</string>
+    <string name="msg_endpoint">"/Messages.json"</string>
+<!-- Client Account -->
+    <string name="accountSID">AC2460abebcc5e2b706956f46ca7ef3cc5</string>
+    <string name="authToken">05b0568ebc36d083d0d78c25b1b99dc2</string>
+    <string name="serviceSID">MGf4bc38c42a353587d03af8799f13d563</string>
+    <string name="twilio_basic">QUMyNDYwYWJlYmNjNWUyYjcwNjk1NmY0NmNhN2VmM2NjNTowNWIwNTY4ZWJjMzZkMDgzZDBkNzhjMjViMWI5OWRjMg==</string>
+<!-- My Account -->
+<!--    <string name="accountSID">ACe3d86cd50228748937a0cf00af547a65</string>-->
+<!--    <string name="authToken">f86b9d8ceb0d611a8e7927255ef26544</string>-->
+<!--    <string name="serviceSID">MGf06a963cb6b3a98bf84b55d9e8a782db</string>-->
+<!--    <string name="twilio_basic">QUNlM2Q4NmNkNTAyMjg3NDg5MzdhMGNmMDBhZjU0N2E2NTpmODZiOWQ4Y2ViMGQ2MTFhOGU3OTI3MjU1ZWYyNjU0NA==</string>-->
+
+</resources>

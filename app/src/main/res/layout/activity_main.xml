@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/login_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:background="#000000"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="50dp">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usernameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="#000000"
+            android:text="UserName"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/userNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/passwordTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Password"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF" />
+
+<!--        <Button-->
+<!--            android:id="@+id/forgetBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:background="#FF000000"-->
+<!--            android:text="Forget Password?"-->
+<!--            android:textColor="#FFEB3B"-->
+<!--            android:textSize="12dp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FF000000"
+                android:text="Login"
+                android:textColor="#FFEB3B"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FF000000"
+                android:fallbackLineSpacing="false"
+                android:text="SignUp"
+                android:textColor="#FFEB3B"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/signup_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:background="#000000"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="50dp">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/signup_title"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/emailEt"
+                android:background="#000000"
+                android:text="@string/useremail"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/emailTv"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/userNameEt"
+                android:background="#000000"
+                android:text="@string/username"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/userNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/usernameTv"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/passwordTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/passwordEt"
+                android:background="#000000"
+                android:text="@string/password"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/passwordTv"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccpDialog_fastScroller_bubbleColor="#FFFFFF"
+                    app:ccpDialog_fastScroller_handleColor="#F8F8F8"
+                    app:ccpDialog_textColor="#FFFFFF"
+                    app:ccp_arrowColor="#FFFFFF"
+                    app:ccp_contentColor="#FFFFFF"
+                    tools:ignore="MissingClass" />
+
+                <EditText
+                    android:id="@+id/phoneEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toEndOf="@id/ccp"
+                    android:backgroundTint="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Enter PhoneNumber"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/verifyEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Enter code"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sendBtn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Send code"
+                    android:textAllCaps="false"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18dp"
+                    app:cornerRadius="8dp"
+                    app:elevation="4dp" />
+
+                <Button
+                    android:id="@+id/resendBtn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="Resend"
+                    android:textAllCaps="false"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18dp"
+                    app:backgroundTint="#040000"
+                    app:cornerRadius="8dp"
+                    app:elevation="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FF000000"
+            android:layout_marginTop="20dp"
+            android:fallbackLineSpacing="false"
+            android:text="@string/signup"
+            android:textColor="#FFEB3B"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
